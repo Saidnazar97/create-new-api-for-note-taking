@@ -1,12 +1,1 @@
-{
-  "notes": [
-    { "title": "Test Title", "text": "Test Text" },
-    {
-      "title": "Tuesday, June 16, 2020",
-      "text": "1. Clean desk\n2. Do laundry"
-    },
-    {},
-    { "text": "Make dinner" },
-    { "title": "Test2", "text": "Test2" }
-  ]
-}
+{"notes":[{"title":"Test Title","text":"Test Text"},{"title":"Tuesday, June 16, 2020","text":"1. Clean desk\n2. Do laundry"},{},{"text":"Make dinner"},{"title":"Test2","text":"Test2"}]}
