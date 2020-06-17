@@ -9,6 +9,7 @@ let activeNote = {};
 
 // A function for getting all notes from the db
 const getNotes = () => {
+  console.log("getNotes()");
   return $.ajax({
     url: "/api/notes",
     method: "GET",
@@ -57,6 +58,7 @@ const handleNoteSave = function () {
   };
 
   saveNote(newNote).then(() => {
+    console.log("saveNote, newNote=" + newNote);
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -103,6 +105,8 @@ const handleRenderSaveBtn = function () {
 
 // Render's the list of note titles
 const renderNoteList = (notes) => {
+  console.log("renderNoteList()");
+  console.log("notes=" + notes);
   $noteList.empty();
 
   const noteListItems = [];
@@ -127,6 +131,8 @@ const renderNoteList = (notes) => {
     noteListItems.push(create$li("No saved Notes", false));
   }
 
+  notes = JSON.parse(notes);
+  console.log("XXX=" + notes);
   notes.forEach((note) => {
     const $li = create$li(note.title).data(note);
     noteListItems.push($li);
