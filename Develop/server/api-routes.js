@@ -27,7 +27,7 @@ router.post("/api/notes", (req, res) => {
   newNotes.id = data.length + 1;
   console.log(newNotes);
   data.push(newNotes);
-  fs.writeFile("db.json", JSON.stringify(data, null, 2));
+  fs.writeFileSync("db.json", JSON.stringify(data, null, 2));
   res.json(data);
 });
 
