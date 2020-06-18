@@ -26,7 +26,6 @@ router.post("/api/notes", (req, res) => {
   data = JSON.parse(data);
   let newNotes = req.body;
   newNotes.id = data.length + 1;
-  //convert num to string
   console.log(newNotes);
   data.push(newNotes);
   fs.writeFileSync("db.json", JSON.stringify(data, null, 2));
@@ -38,13 +37,10 @@ router.delete("/api/notes/:id", (req, res) => {
   // Get id from request
   let id = req.params.id;
   console.log("id=" + id);
-
   // Get all notes from database
   let data = fs.readFileSync("db.json", "utf8");
-
   // Convert to array so I can loop through
   data = JSON.parse(data);
-
   // Looping (aka iterating) through array and
   // find the item to remove.
   for (let i = 0; i < data.length; i++) {
@@ -54,7 +50,6 @@ router.delete("/api/notes/:id", (req, res) => {
     }
   }
   fs.writeFileSync("db.json", JSON.stringify(data, null, 2));
-
   // Send response
   res.json(data);
 });

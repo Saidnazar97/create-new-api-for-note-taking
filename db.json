@@ -2,11 +2,16 @@
   {
     "title": "Note Title",
     "text": "note text",
-    "id": "1"
+    "id": 1
   },
   {
     "title": "Thursday",
     "text": "make breakfast",
-    "id": "3"
+    "id": 3
+  },
+  {
+    "title": "Thursday, part 2",
+    "text": "make second breakfast",
+    "id": 3
   }
 ]
