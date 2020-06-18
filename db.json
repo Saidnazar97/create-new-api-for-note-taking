@@ -1,27 +1,12 @@
 [
   {
-    "id": "1",
-    "title": "Test Title",
-    "text": "Test text"
+    "title": "Note Title",
+    "text": "note text",
+    "id": "1"
   },
   {
-    "id": "2",
-    "title": "6/18/2020 Notes",
-    "text": "These are my notes from 6/18/2020 "
-  },
-  {
-    "id": "3",
-    "title": "6/18/2020 Notes",
-    "text": "These are my notes from 6/18/2020 "
-  },
-  {
-    "id": "4",
-    "title": "Test Notes",
-    "text": "These are my notes from 6/18/2020 "
-  },
-  {
-    "title": "New note",
-    "text": "test 1",
-    "id": 5
+    "title": "Thursday",
+    "text": "make breakfast",
+    "id": "3"
   }
 ]
